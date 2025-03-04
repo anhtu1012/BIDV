@@ -1,0 +1,117 @@
+.Footer {
+  height: 876px;
+  &__Background {
+    position: relative !important;
+    height: 744px;
+    width: 100%;
+    background: #80beb2;
+    filter: saturate(1.2) !important;
+    &--Green {
+      width: 100% !important;
+      height: 744px !important;
+      position: absolute !important;
+      filter: saturate(1.8) !important;
+      opacity: 0.4;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+    &--Form {
+      width: 566.48px;
+      height: 496px;
+      background: linear-gradient(to bottom, #0aad90, #026a69);
+      position: absolute;
+      top: 18%;
+      right: 10%;
+      z-index: 10;
+      border-radius: 10px;
+    }
+    &--Wrapper {
+      width: 545px;
+      &--Header {
+        margin: 2px;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+      &--Content {
+        width: 90%;
+        margin: auto;
+        .Row {
+          display: flex;
+          justify-content: space-between;
+          .Col {
+            width: 45%;
+          }
+        }
+        .WrappButton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &__ButtonSubmit {
+            padding: 20px;
+            width: 250px;
+            border-radius: 30px;
+            background: linear-gradient(to right, #ffc72f, #e1a912);
+            color: #026a69;
+            font-weight: 700;
+            font-size: 20px;
+            &:hover {
+              color: #0aad90 !important;
+              background-color: #ffd971 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__Down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__Content {
+      justify-content: space-between;
+      display: flex;
+      width: 70%;
+      .groupImage {
+        width: 48%;
+        display: flex;
+        justify-content: space-between;
+        .text {
+          margin-top: 25px;
+          color: white !important;
+        }
+      }
+      .groupTagA {
+        width: 55%;
+        display: flex;
+        justify-content: flex-end;
+        a {
+          margin-top: 25px;
+          color: white !important;
+          margin-left: 30px;
+          padding: 0 15px;
+          span {
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+    .dividerWrapper {
+      width: 70% !important;
+      margin: auto;
+      &__content {
+        border-color: white !important;
+      }
+    }
+  }
+  .iconLast {
+    width: 70%;
+    span {
+      font-size: 24px;
+      display: flex;
+      justify-content: end;
+    }
+  }
+}

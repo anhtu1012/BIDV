@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  padding: 10px 0rem;
+  height: 69px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: linear-gradient(360deg, rgba(2, 77, 70, 0) -150.28%, #024D46 57.97%);
+  
+}
+
+.header-container {
+  padding: 0px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left .logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.header-center nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.header-center nav ul li {
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+}
+
+.header-center nav ul li.active {
+  border-bottom: 2px solid white;
+}
+
+.register-btn {
+  background-color: #ffc72f;
+  color: #024d46;
+  border: none;
+  width: 193px;
+  height: 45px;
+  border-radius: 22.5px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #f5b914;
+}
+
+.nav-tabs {
+  display: flex;
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+}
+
+.nav-tab {
+  flex: 1;
+  padding: 12px 20px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: #555;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+
+  &.active {
+    color: #fff;
+  }
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 33.33%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #0aad90;
+  transition: transform 0.3s ease-in-out;
+}
