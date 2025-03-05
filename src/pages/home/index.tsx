@@ -187,7 +187,9 @@ function Home() {
                 "linear-gradient(16.33deg, #026A66 13.18%, #058074 69.78%, #0AAD90 120.17%)",
             }}
           >
+          
             <div className="solution-image">
+              <img src="/image 1.png" alt="" className="image_banerrr_2" />
               <img
                 src="/cang2.png"
                 alt="Tài trợ nhập khẩu"
@@ -249,6 +251,7 @@ function Home() {
             </div>
           </div>
 
+
           <div
             className="solution-card"
             style={{
@@ -300,8 +303,37 @@ function Home() {
                 className="solution-image__detail"
               />
             </div>
+            <img src="/image 1.png" alt="" className="image_banerrr3" />
           </div>
         </div>
+        <div
+            className="solution-card-last"
+            style={{
+              backgroundColor: "#026A66" }}
+          >
+              <img
+                src="/tradeboming.png"
+                alt="Tàu"
+                className="solution-image__detail"
+              />
+              <div className="card-group">
+                <img
+                  src="/card-item1.png"
+                  alt="Card1"
+                  className="solution-image__detail"
+                />
+                <img
+                  src="/card-item2.png"
+                  alt="Card2"
+                  className="solution-image__detail"
+                />
+                <img
+                  src="/card-item3.png"
+                  alt="Card3"
+                  className="solution-image__detail"
+                />
+              </div>
+            </div>
       </section>
 
       <section className="new-products-section">
@@ -506,12 +538,28 @@ function Home() {
           )}
         </div>
       </section>
+
       <div className="banner-container">
         <img
           src={bannerImage}
           alt="SME Champion 2024"
           className="banner-image"
         />
+        <span className="banner-caption">Gói ưu đãi dành cho khách hàng SME: SME  Champion</span>
+      </div>
+      <div className="image-gallery">
+        <div className="gallery-item">
+          <img src="/container1.png" alt="Page 1" className="gallery-image" />
+          <span className="image-caption">Ưu đãi thẻ doanh nghiệp</span>
+        </div>
+        <div className="gallery-item">
+          <img src="/container2.png" alt="Page 2" className="gallery-image" />
+          <span className="image-caption">Ưu đãi bảo lãnh Guarantee Success</span>
+        </div>
+        <div className="gallery-item">
+          <img src="/container3.png" alt="Page 3" className="gallery-image" />
+          <span className="image-caption">Vay thấu chi tín chấp online Misa Lending</span>
+        </div>
       </div>
     </div>
   );

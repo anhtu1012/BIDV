@@ -30,11 +30,6 @@ function CustomFooter() {
             src="/Maskgroup.png"
             alt="Background"
           />
-          {/* <img
-            className="Footer__Background--Green"
-            src="/FooterBackgroundGreen.jpg"
-            alt="backgroundGreen"
-          /> */}
           <div className="Footer__Background--Form">
             <div className="Footer__Background--Wrapper">
               <div className="Footer__Background--Wrapper--Header">
