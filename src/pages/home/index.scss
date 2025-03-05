@@ -137,6 +137,9 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    &:hover {
+      animation: ScaleAniUp 0.25s ease-in-out 0.05s forwards;
+    }
   }
   &__2 {
     background: linear-gradient(
@@ -162,6 +165,9 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    &:hover {
+      animation: ScaleAniUp 0.25s ease-in-out 0.05s forwards;
+    }
   }
   &__3 {
     background: linear-gradient(
@@ -187,6 +193,9 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    &:hover {
+      animation: ScaleAniUp 0.25s ease-in-out 0.05s forwards;
+    }
   }
   &__4 {
     background: linear-gradient(
@@ -211,6 +220,9 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    &:hover {
+      animation: ScaleAniUp 0.25s ease-in-out 0.05s forwards;
+    }
   }
 }
 .image-container__col {
@@ -222,6 +234,7 @@
     #026a66 13.18%,
     #058074 69.78%,
     #0aad90 120.17%
+    
   );
 
   // background-image: url("../../../public/anhchung3.png");
@@ -229,6 +242,9 @@
   width: 100%;
   // height: 100%;
   margin: 5px;
+  &:hover {
+    animation: ScaleAniUp 0.25s ease-in-out 0.05s forwards
+  }
   &__dv {
     width: 100%;
     height: 100%;
@@ -314,7 +330,12 @@
   right: 0;
   opacity: 0.1;
   z-index: 1;
+  height: 460px;
+  background-color: #ffffff;
+  filter: brightness(1.6);
 }
+
+
 .solution-card {
   position: relative;
   display: flex;
@@ -328,6 +349,119 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   margin: 0;
+  .image_banerrr_2 {
+    position: absolute;
+    left: 0;
+    opacity: 0.1;
+    z-index: 1;
+    top: 0;
+    height: 395px;
+    filter: brightness(1.5);
+    rotate: 180deg;
+    background-color: white;
+  }
+  .image_banerrr3{
+    position: absolute;
+    right: 0;
+    opacity: 0.1;
+    z-index: 1;
+    height: 389px;
+    background-color: #ffffff;
+    filter: brightness(1.6);
+  }
+}
+.banner-container {
+  padding: 0px 150px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.banner-image {
+  width: 100%; /* Điều chỉnh kích thước theo nhu cầu */
+  // max-width: 1000px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-caption {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #03766B;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.image-gallery {
+  padding: 0px 150px;
+  margin: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  gap: 1px;
+  overflow: hidden;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  width: calc(100% / 3.2);
+  text-align: center;
+}
+
+.gallery-image {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+.image-caption {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #03766B;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+.solution-card-last {
+  height: 518.41px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  .solution-image__detail {
+    width: 80%;
+    margin-right: 200px;
+  }
+  .card-group{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    height: 485px;
+    gap: 32px;
+    width: 482px;
+    justify-content: center;
+    align-items: center;
+    left: 62%;
+    .solution-image__detail {
+      width: 279px;
+      height: 93px;
+    }
+  }
 }
 
 .solution-card:hover {
@@ -410,6 +544,8 @@
   z-index: 2;
   &__detail {
     width: 100%;
+    z-index: 10;
+    position: relative;
   }
 }
 
@@ -535,4 +671,13 @@
   // max-width: 1000px;
   height: 100%;
   object-fit: cover;
+}
+
+@keyframes ScaleAniUp {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.05;
+  }
 }
